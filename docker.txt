@@ -1,0 +1,7 @@
+(set the connection in mysql workbench)
+
+docker run --name mysqlnapi -p 3306:3306 -e MYSQL_ROOT_PASSWORD=mypasswd -d mysql
+docker exec -it mysqlnapi bash
+mysql -u root -pmypasswd
+
+exec database.sql commands
